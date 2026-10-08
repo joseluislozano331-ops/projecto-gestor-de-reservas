@@ -18,7 +18,7 @@ This preview supports *italic*, **bold**, ***bold+italic***, ~~strikethrough~~, 
 
 ## Image
 
-![Sample chart](/static/home/users-graph.png)
+![Sample chart](/users/sanch/Desktop/Reinhard Van Astrea/Dogrón.jpeg)
 
 ## Code blocks
 
