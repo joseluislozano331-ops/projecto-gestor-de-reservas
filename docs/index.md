@@ -1,12 +1,10 @@
-# Markdown Playground Demo
+# Projecto de reservas
 
 This preview supports *italic*, **bold**, ***bold+italic***, ~~strikethrough~~, and inline code like `npm run dev`.
 
 ## Headers
 
-### H3 Section
-#### H4 Section
-##### H5 Section
+### Jose Luis y Aarón
 
 ## Lists
 
@@ -18,7 +16,8 @@ This preview supports *italic*, **bold**, ***bold+italic***, ~~strikethrough~~, 
 
 ## Image
 
-![Sample chart](/static/home/users-graph.png)
+![Sample chart](img/Dogron.jpeg)
+![Sample chart](img/jose%20luis%20foto.jpeg)
 
 ## Code blocks
 

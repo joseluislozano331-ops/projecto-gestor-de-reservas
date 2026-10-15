@@ -1,7 +1,0 @@
-site_name: Documentació del Projecte
-
-theme:
-  name: material
-
-nav:
-  - Inici: index.md
