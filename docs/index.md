@@ -1,18 +1,17 @@
-# Projecto de reservas
+# Bienvenidos a CRS
 
-This preview supports *italic*, **bold**, ***bold+italic***, ~~strikethrough~~, and inline code like `npm run dev`.
+Tu mundo, tus reglas. Crea tu propio servidor en segundos y juega sin límites.
 
-## Headers
+## Fundadores
 
 ### Jose Luis y Aarón
 
-## Lists
+## Quienes somos? 
 
-- Unordered list item
-- Another item with **strong** text
+- Somos 2 alumnos de SMX los cuales estan diseñando esta pagina para un trabajo de clase 
 
-1. Ordered step one
-2. Ordered step two
+1. Aarón
+2. Jose Luis
 
 ## Image
 ![Sample chart](img/Dogron.jpeg)
