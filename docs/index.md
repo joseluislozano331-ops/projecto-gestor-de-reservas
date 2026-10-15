@@ -15,7 +15,6 @@ This preview supports *italic*, **bold**, ***bold+italic***, ~~strikethrough~~, 
 2. Ordered step two
 
 ## Image
-
 ![Sample chart](img/Dogron.jpeg)
 ![Sample chart](img/jose%20luis%20foto.jpeg)
 
