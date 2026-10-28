@@ -19,25 +19,8 @@ Tu mundo, tus reglas. Crea tu propio servidor en segundos y juega sin límites.
 
 ## Como funciona?
 
-```python
-def greet(name: str) -> str:
-    return f"Hello, {name}"
-```
+Medeiante un chat automatizado el usuario dice la modalidad, mod pack, persona,horas del server que va estar abierto, etc. 
 
-```javascript
-const users = [{ name: "Alice" }, { name: "Bob" }];
-console.log(users.map((u) => u.name).join(", "));
-```
-
-```bash
-curl -s https://www.devtoolsdaily.com/sitemap.xml | head -n 5
-```
-
-## Table
-
-| Feature | Status | Notes |
-| --- | :---: | --- |
-| GFM Tables | Yes | Uses `remark-gfm` |
-| Syntax Highlighting | Yes | Multiple languages |
-| Inline Code | Yes | Styled with monospace |
-
+# Resultado aproximado
+![Sample chart] (img/foto de prueba del chat.png
+)
