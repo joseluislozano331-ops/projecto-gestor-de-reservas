@@ -10,14 +10,14 @@ Tu mundo, tus reglas. Crea tu propio servidor en segundos y juega sin límites.
 
 - Somos 2 alumnos de SMX los cuales estan diseñando esta pagina para un trabajo de clase 
 
-1. Aarón
-2. Jose Luis
+1. Aarón:
+2. Jose Luis:
 
-## Image
+## Nosotros
 ![Sample chart](img/Dogron.jpeg)
 ![Sample chart](img/jose%20luis%20foto.jpeg)
 
-## Code blocks
+## Como funciona?
 
 ```python
 def greet(name: str) -> str:
