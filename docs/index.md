@@ -10,8 +10,9 @@ Tu mundo, tus reglas. Crea tu propio servidor en segundos y juega sin límites.
 
 - Somos 2 alumnos de SMX los cuales estan diseñando esta pagina para un trabajo de clase 
 
-1. Aarón:
-2. Jose Luis:
+1. Aarón: Estudio SMX y me gusta bastante programar.
+
+2. Jose Luis:  Yo tambien estudio SMX y aunque no me guste tanto programar me lo paso bastante bien.
 
 ## Nosotros
 ![Sample chart](img/Dogron.jpeg)
@@ -22,5 +23,4 @@ Tu mundo, tus reglas. Crea tu propio servidor en segundos y juega sin límites.
 Medeiante un chat automatizado el usuario dice la modalidad, mod pack, persona,horas del server que va estar abierto, etc. 
 
 # Resultado aproximado
-![Sample chart] (img/foto de prueba del chat.png
-)
+
