@@ -16,7 +16,7 @@ Tu mundo, tus reglas. Crea tu propio servidor en segundos y juega sin límites.
 
 ## Nosotros
 <img src="img/Dogron.jpeg" width="20%">
-<img src="img/jose%20luis%20foto.jpeg" width="64">
+<img src="img/jose luis foto.jpeg" width="64">
 
 ## Como funciona?
 
