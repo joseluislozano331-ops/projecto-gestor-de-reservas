@@ -2,6 +2,9 @@ site_name: Documentació del Projecte
 
 theme:
   name: material
+  palette:
+    primary: 'blue'
+    accent: 'light blue'
 
 nav:
   - Inici: index.md
