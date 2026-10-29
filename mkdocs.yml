@@ -1,11 +1,12 @@
 site_name: CRS
 
 theme:
-  name:lux
-  
+  name: material
+  palette:
+    - scheme: default
+      primary: blue
+      accent: blue
 
 nav:
   - Inici: index.md
-  - Reservas:
-      - Nova reserva: reservas/nova_reserva.md
-      - Consultar reservas: reservas/consultar_reservas.md
+  - Grup: grup.md
