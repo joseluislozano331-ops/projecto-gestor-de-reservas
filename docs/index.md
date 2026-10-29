@@ -20,7 +20,7 @@ Tu mundo, tus reglas. Crea tu propio servidor en segundos y juega sin límites.
 
 ## Como funciona?
 
-Medeiante un chat automatizado el usuario dice la modalidad, mod pack, persona,horas del server que va estar abierto, etc. 
+Medeiante un chat automatizado el usuario dice la modalidad, mod pack, persona,horas del server que va estar abierto, etc. Y una IA se encarga de asignarle un servidor automaticaente.
 
 # Resultado aproximado
-
+<img src="img\foto de prueba del chat.png">
