@@ -2,10 +2,7 @@ site_name: CRS
 
 theme:
   name: lux
-  palette:
-    - scheme: default
-      primary: blue
-      accent: blue
+  
 
 nav:
   - Inici: index.md
