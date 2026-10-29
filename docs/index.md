@@ -15,7 +15,7 @@ Tu mundo, tus reglas. Crea tu propio servidor en segundos y juega sin límites.
 2. Jose Luis:  Yo tambien estudio SMX y aunque no me guste tanto programar me lo paso bastante bien.
 
 ## Nosotros
-![Sample chart](img/Dogron.jpeg)
+![Sample chart](img/Dogron.jpeg)%20
 ![Sample chart](img/jose%20luis%20foto.jpeg)
 
 ## Como funciona?
