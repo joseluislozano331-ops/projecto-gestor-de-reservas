@@ -3,16 +3,15 @@
 Tu mundo, tus reglas. Crea tu propio servidor en segundos y juega sin límites.
 
 ## Fundadores
-
-### Jose Luis y Aarón
+#### Jose Luis y Aarón
 
 ## Quienes somos? 
 
-- Somos 2 alumnos de SMX los cuales estan diseñando esta pagina para un trabajo de clase 
+-Somos 2 alumnos de SMX los cuales estan diseñando esta pagina para un trabajo de clase 
 
-1. Aarón: Estudio SMX y me gusta bastante programar.
+1.Aarón: Estudio SMX y me gusta bastante programar.
 
-2. Jose Luis:  Yo tambien estudio SMX y aunque no me guste tanto programar me lo paso bastante bien.
+2.Jose Luis:  Yo tambien estudio SMX y aunque no me guste tanto programar me lo paso bastante bien.
 
 ## Nosotros
 <img src="img/Dogron.jpeg" width="20%">
