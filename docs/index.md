@@ -13,6 +13,8 @@ Tu mundo, tus reglas. Crea tu propio servidor en segundos y juega sin límites.
 
 2.Jose Luis:  Yo tambien estudio SMX y aunque no me guste tanto programar me lo paso bastante bien.
 
+3.Volodymyr: ¡Hola! Me llamo Volodymyr y soy el creador de este proyecto. Estudio el ciclo SMX2A y me apasionan las tecnologías web, la administración de sistemas y el desarrollo de sitios web modernos.
+
 ## Nosotros
 <img src="img/Dogron.jpeg" width="20%">
 <img src="img/jose luis foto.jpeg" width="20%">
