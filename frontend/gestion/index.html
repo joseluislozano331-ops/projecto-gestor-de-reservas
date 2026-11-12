@@ -1,27 +1,265 @@
-<!doctype html>
-<html lang="ca">
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gestió · Esquelet</title>
-  <link rel="stylesheet" href="/css/styles.css">
-  <script type="module" src="/gestion/gestion.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Hosting - Chat</title>
+    <style>
+        /* Reset y estilos base */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #142419 0%, #0b0e0c 60%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Barra de navegación superior */
+        header {
+            width: 100%;
+            border-bottom: 1px solid #222924;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav {
+            display: flex;
+            gap: 35px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        nav a {
+            color: #9ca3af;
+            text-decoration: none;
+            padding: 18px 5px;
+            font-size: 15px;
+            font-weight: 500;
+            border-bottom: 3px solid transparent;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        nav a.active {
+            color: #ffffff;
+            border-bottom: 3px solid #4ade80;
+        }
+
+        /* Títulos principales */
+        .hero-titles {
+            text-align: center;
+            margin: 35px 0 25px 0;
+        }
+
+        .subtitle {
+            color: #4ade80;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+
+        .main-title {
+            font-size: 36px;
+            font-weight: 900;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Contenedor de la ventana de chat */
+        .chat-window {
+            width: 90%;
+            max-width: 780px;
+            background-color: #161817;
+            border: 1px solid #2a2e2c;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        /* Cabecera de la ventana */
+        .chat-header {
+            background-color: #1c1f1d;
+            padding: 14px 20px;
+            border-bottom: 1px solid #2a2e2c;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        /* Icono estilo bloque de césped */
+        .block-icon {
+            width: 22px;
+            height: 22px;
+            border-radius: 3px;
+            background: linear-gradient(to bottom, #52a535 0%, #52a535 35%, #79553a 35%, #79553a 100%);
+            border: 1px solid #2b1d12;
+        }
+
+        .chat-title {
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .window-controls {
+            display: flex;
+            gap: 16px;
+            color: #9ca3af;
+            font-size: 16px;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .window-controls span:hover {
+            color: #ffffff;
+        }
+
+        /* Área vacía donde aparecerán los mensajes */
+        .chat-body {
+            height: 380px;
+            padding: 20px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        /* Barra inferior de escritura */
+        .chat-footer {
+            padding: 14px 16px;
+            background-color: #161817;
+            border-top: 1px solid #2a2e2c;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .message-input {
+            flex: 1;
+            background-color: #212422;
+            border: 1px solid #323634;
+            border-radius: 6px;
+            padding: 11px 14px;
+            color: #ffffff;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .message-input::placeholder {
+            color: #7c827e;
+        }
+
+        .message-input:focus {
+            border-color: #4ade80;
+        }
+
+        .btn-file {
+            background-color: #212422;
+            color: #d1d5db;
+            border: 1px solid #323634;
+            border-radius: 6px;
+            padding: 10px 14px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: background 0.2s;
+        }
+
+        .btn-file:hover {
+            background-color: #2c302e;
+        }
+
+        .btn-send {
+            background-color: #5cb85c;
+            color: #0b140d;
+            border: none;
+            border-radius: 6px;
+            padding: 11px 20px;
+            font-size: 13px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .btn-send:hover {
+            background-color: #4cae4c;
+        }
+    </style>
 </head>
 <body>
-  <h1>Gestió de reserves</h1><a href="/">Tornar</a>
-  <!-- TODO F3: aquesta pàgina ENCARA NO té autenticació. Configurar-la a Nginx. -->
-  <p id="admin-status" role="status">TODO F4: carregar les reserves.</p>
-  <button id="refresh" type="button">Actualitzar</button>
-  <table><thead><tr><th>ID</th><th>Nom</th><th>Data</th><th>Hora</th><th>Comensals</th><th>Estat</th><th>Accions</th></tr></thead>
-    <tbody id="reservations"></tbody>
-  </table>
-  <h2>Editar reserva</h2>
-  <form id="edit-form">
-    <label>ID <input name="id" readonly required></label>
-    <label>Nom <input name="name" required></label>
-    <label>Data <input name="date" type="date" required></label>
-    <label>Hora <input name="time" type="time" required></label>
-    <label>Comensals <input name="diners" type="number" min="1" max="8" required></label>
-    <button type="submit">Desar canvis</button>
-  </form>
+
+    <!-- Menú superior -->
+    <header>
+        <nav>
+            <a href="#" class="active">Hosting</a>
+            <a href="#">Modpacks</a>
+            <a href="#">Servers</a>
+            <a href="#">News</a>
+        </nav>
+    </header>
+
+    <!-- Títulos -->
+    <div class="hero-titles">
+        <div class="subtitle">MINECRAFT HOSTING</div>
+        <h1 class="main-title">SERVER RESERVATIONS</h1>
+    </div>
+
+    <!-- Ventana de chat -->
+    <main class="chat-window">
+        <div class="chat-header">
+            <div class="header-left">
+                <div class="block-icon"></div>
+                <span class="chat-title">MINECRAFT AI ASSISTANT</span>
+            </div>
+            <div class="window-controls">
+                <span>−</span>
+                <span>×</span>
+            </div>
+        </div>
+
+        <!-- Espacio en blanco para los mensajes -->
+        <div class="chat-body" id="chatBody"></div>
+
+        <!-- Barra de entrada de texto -->
+        <div class="chat-footer">
+            <input type="text" class="message-input" placeholder="Type your message...">
+            <button type="button" class="btn-file">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                </svg>
+                File
+            </button>
+            <button type="button" class="btn-send">Send</button>
+        </div>
+    </main>
+
 </body>
 </html>
