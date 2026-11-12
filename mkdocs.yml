@@ -1,4 +1,5 @@
-site_name: CRS
+site_name: 
+  - Grup: grup.md
 
 theme:
   name: material
