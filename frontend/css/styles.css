@@ -44,3 +44,44 @@ label {
 p {
     color:white
 }
+
+nav {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #22272e;
+    margin-bottom: 1.5rem;
+}
+
+nav a {
+    color: #9ba1a6; 
+    text-decoration: none; 
+    font-weight: 500;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+
+nav a:hover {
+    color: #ffffff;
+}
+
+
+nav a.active,
+nav a:hover::after {
+    color: #ffffff;
+}
+
+nav a.active::after,
+nav a:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -17px; 
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #4caf50;
+    border-radius: 2px;
+}
