@@ -29,6 +29,10 @@ th, td {
     min-height: 5rem; border: 1px solid #aaa; padding: .5rem;
 }
 
+h1 {
+    color:white
+}
+
 h2 {
     color:white
 }
