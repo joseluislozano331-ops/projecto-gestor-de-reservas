@@ -101,3 +101,12 @@ nav a:hover::after {
     background-color: #4caf50;
     border-radius: 2px;
 }
+
+nav {
+    display: flex;
+    justify-content: center; /* Вирівнює посилання по центру */
+    gap: 2rem;               /* Відстань між посиланнями */
+    padding: 1rem 0;
+    border-bottom: 1px solid #22272e;
+    margin-bottom: 1.5rem;
+}
