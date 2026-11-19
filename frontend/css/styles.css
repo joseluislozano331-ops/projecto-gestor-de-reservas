@@ -45,8 +45,20 @@ p {
     color:white
 }
 
-h3 {
-    color: green
+.minecraft_hosting {
+    text-align: center;
+    color: green;
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.3rem;
+    
+}
+
+.server_reservations {
+    text-align: center; /* Ставить текст рівно по центру */
+    font-size: 0.9rem;
+    letter-spacing: 1.5px;
+    margin-bottom: 0.3rem;
 }
 
 nav {
